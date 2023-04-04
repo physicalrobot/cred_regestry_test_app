@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+
+  >
+  <AutoCompleteTextView
+      android:id="@+id/auto_complete_textview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:inputType="none" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+  <Button
+      android:id="@+id/button_second"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Submit"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.937" />
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/textInputLayout"
+      android:layout_width="409dp"
+      android:layout_height="wrap_content"
+      tools:layout_editor_absoluteX="1dp"
+      tools:layout_editor_absoluteY="228dp" />
+
+
+
+  <EditText
+      android:id="@+id/editTextTextPersonName2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:text="Enter Type"
+      app:layout_constraintBottom_toTopOf="@+id/address1"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.687"
+      tools:layout_editor_absoluteX="103dp" />
+
+
+  <TextView
+      android:id="@+id/address1"
+      android:layout_width="298dp"
+      android:layout_height="144dp"
+      android:gravity="left"
+      android:lines="4"
+      android:maxLines="4"
+      android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      app:layout_constraintBottom_toTopOf="@+id/button_second"
+      app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+      app:layout_constraintVertical_bias="0.034"
+      tools:layout_editor_absoluteX="56dp"></TextView>
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Element Keys"
+      tools:layout_editor_absoluteX="56dp"
+      tools:layout_editor_absoluteY="202dp" />
+  <ListView
+      android:layout_width="204dp"
+      android:layout_height="135dp"
+      tools:layout_editor_absoluteX="103dp"
+      tools:layout_editor_absoluteY="405dp"
+
+      />
+  <Button
+      android:id="@+id/button"
+      android:layout_width="181dp"
+      android:layout_height="60dp"
+      android:text="Add Another Credential"
+      app:layout_constraintBottom_toTopOf="@+id/button_second"
+      app:layout_constraintTop_toBottomOf="@+id/_dynamic"
+      tools:layout_editor_absoluteX="115dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
